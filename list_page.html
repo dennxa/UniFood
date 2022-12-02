@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="pizza, delivery food, fast food, sushi, take away, chinese, italian food">
+    <meta name="description" content="">
+    <meta name="author" content="Ansonika">
+    <title>UniFood</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+    
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/elegant_font/elegant_font.min.css" rel="stylesheet">
+    <link href="css/fontello/css/fontello.min.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/pop_up.css" rel="stylesheet">
+    
+    <!-- Radio and check inputs -->
+    <link href="css/skins/square/grey.css" rel="stylesheet">
+    <link href="css/ion.rangeSlider.css" rel="stylesheet">
+    <link href="css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div id="preloader">
+        <div class="sk-spinner sk-spinner-wave" id="status">
+            <div class="sk-rect1"></div>
+            <div class="sk-rect2"></div>
+            <div class="sk-rect3"></div>
+            <div class="sk-rect4"></div>
+            <div class="sk-rect5"></div>
+        </div>
+    </div><!-- End Preload -->
+
+     <!-- Header ================================================== -->
+    <header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-4">
+                <a href="index.html" id="logo">
+                    <img src="img/logo/logo.png" width="190" height="23" alt="" class="d-none d-sm-block">
+                    <img src="img/logo/logo_mobile.png" width="59" height="23" alt="" class="d-block d-sm-none">
+                </a>
+            </div>
+            <nav class="col-md-8 col-sm-8 col-8">
+            <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+            <div class="main-menu">
+                <div id="header_menu">
+                    <img src="img/logo.png" width="190" height="23" alt="">
+                </div>
+                <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
+                 <ul>
+                    <li class="submenu">
+                    <a href="index.html" class="show-submenu">Inicio</a>
+                    </li>
+                    <li class="submenu">
+                    <a href="list_page.html" class="show-submenu">Restaurantes</a>
+                    </li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="faq.html">Faq</a></li>
+                    <li class="submenu">
+                    <a href="javascript:void(0);" class="show-submenu">Pages<i class="icon-down-open-mini"></i></a>
+                    <ul>
+                        <li><a href="admin.html">Admin section</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </div><!-- End main-menu -->
+            </nav>
+        </div><!-- End row -->
+    </div><!-- End container -->
+    </header>
+    <!-- End Header =============================================== -->
+
+	<!-- SubHeader =============================================== -->
+	<section class="parallax-window" id="short" data-parallax="scroll" data-image-src="img/sub_header_short.jpeg" data-natural-width="1400" data-natural-height="350">
+	    <div id="subheader">
+	        <div id="sub_content">
+	            <h1>6 resultados en tu area</h1>
+	            <div><i class="icon_pin"></i>Universidad de Sonora</div>
+	        </div><!-- End sub_content -->
+	    </div><!-- End subheader -->
+	</section><!-- End section -->
+	<!-- End SubHeader ============================================ -->
+
+    <div id="position">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>Restaurantes</li>
+            </ul>
+             <a href="#0" class="search-overlay-menu-btn"><i class="icon-search-6"></i> Search</a>
+        </div>
+    </div><!-- Position -->
+    
+    <div class="collapse" id="collapseMap">
+		<div id="map" class="map"></div>
+	</div><!-- End Map -->
+
+<!-- Content ================================================== -->
+<div class="container margin_60_35">
+	<div class="row">
+    
+		<div class="col-lg-3">
+			
+			<div id="filters_col">
+				<a data-toggle="collapse" href="#collapseFilters" aria-expanded="false" aria-controls="collapseFilters" id="filters_col_bt">Filtros <i class="icon-plus-1 float-right"></i></a>
+				<div class="collapse show" id="collapseFilters">
+					<div class="filter_type">
+                    	
+						<h6>Type</h6>
+						<ul>
+							<li><label><input type="checkbox" checked class="icheck">All <small>(49)</small></label></li>
+							<li><label><input type="checkbox" class="icheck">Platos Fuertes <small>(12)</small></label><i class="color_1"></i></li>
+							<li><label><input type="checkbox" class="icheck">Snacks <small>(5)</small></label><i class="color_2"></i></li>
+							<li><label><input type="checkbox" class="icheck">Bebidas <small>(5)</small></label><i class="color_2"></i></li>
+						</ul>
+					</div>
+					<div class="filter_type">
+						<h6>Calificacion</h6>
+						<ul>
+							<li><label><input type="checkbox" class="icheck"><span class="rating">
+							<i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i>
+							</span></label></li>
+							<li><label><input type="checkbox" class="icheck"><span class="rating">
+							<i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i>
+							</span></label></li>
+							<li><label><input type="checkbox" class="icheck"><span class="rating">
+							<i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i>
+							</span></label></li>
+							<li><label><input type="checkbox" class="icheck"><span class="rating">
+							<i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i>
+							</span></label></li>
+							<li><label><input type="checkbox" class="icheck"><span class="rating">
+							<i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i>
+							</span></label></li>
+						</ul>
+					</div>
+				</div><!--End collapse -->
+			</div><!--End filters col-->
+		</div><!--End col-md -->
+        
+		<div class="col-lg-9">
+        
+        
+			<div class="strip_list wow fadeIn" data-wow-delay="0.1s">
+				<div class="ribbon_1">
+					Popular
+				</div>
+				<div class="row">
+					<div class="col-md-9">
+						<div class="desc">
+							<div class="thumb_strip">
+								<a href="detail_page_loli.html"><img src="img/loli.jpg" alt=""></a>
+							</div>
+							<div class="rating">
+								<i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i> (<small><a href="#0">98 reviews</a></small>)
+							</div>
+							<h3>Doña Loli</h3>
+							<div class="location">
+								A un lado del domo de industrial, atrás del edificio 5J. <br><span class="opening">8:00am - 7:30pm</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="go_to">
+							<div>
+								<a href="detail_page_loli.html" class="btn_1">Ver Menu</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- End row-->
+			</div><!-- End strip_list-->
+            
+			<div class="strip_list wow fadeIn" data-wow-delay="0.2s">
+				<div class="ribbon_1">
+					Popular
+				</div>
+				<div class="row">
+					<div class="col-md-9">
+						<div class="desc">
+							<div class="thumb_strip">
+								<a href="detail_page_tortas.html"><img src="img/calidad.jpg" alt=""></a>
+							</div>
+							<div class="rating">
+								<i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i> (<small><a href="#0">98 reviews</a></small>)
+							</div>
+							<h3>Tortas de Calidad</h3>
+							<div class="location">
+								Al lado del edificio 5F. <br>
+								<span class="opening">7:00am – 7:00pm</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="go_to">
+							<div>
+								<a href="detail_page_tortas.html" class="btn_1">Ver Menu</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- End row-->
+			</div><!-- End strip_list-->
+            
+			<div class="strip_list wow fadeIn" data-wow-delay="0.3s">
+				<div class="ribbon_1">
+					Popular
+				</div>
+				<div class="row">
+					<div class="col-md-9">
+						<div class="desc">
+							<div class="thumb_strip">
+								<a href="detail_page_indus.html"><img src="img/industrial.jpg" alt=""></a>
+							</div>
+							<div class="rating">
+								<i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i> (<small><a href="#0">98 reviews</a></small>)
+							</div>
+							<h3>Tiendita de industrial </h3>
+							<div class="location">
+								Atrás del edificio 5R <br>
+								<span class="opening">6:30am – 7:30pm</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="go_to">
+							<div>
+								<a href="detail_page_indus.html" class="btn_1">Ver Menu</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- End row-->
+			</div><!-- End strip_list-->
+            
+			<div class="strip_list wow fadeIn" data-wow-delay="0.4s">
+				<div class="ribbon_1">
+					Popular
+				</div>
+				<div class="row">
+					<div class="col-md-9">
+						<div class="desc">
+							<div class="thumb_strip">
+								<a href="detail_page_quim.html"><img src="img/quimica.jpg" alt=""></a>
+							</div>
+							<div class="rating">
+								<i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i> (<small><a href="#0">98 reviews</a></small>)
+							</div>
+							<h3>Tiendita de quimica</h3>
+							<div class="location">
+								Entre el edificio 5G y el estadio Castro Servín. <br>
+								<span class="opening">7:00am – 7:00pm</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="go_to">
+							<div>
+								<a href="detail_page_quim.html" class="btn_1">Ver Menu</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- End row-->
+			</div><!-- End strip_list-->
+            
+			<div class="strip_list wow fadeIn" data-wow-delay="0.5s">
+				<div class="row">
+					<div class="col-md-9">
+						<div class="desc">
+							<div class="thumb_strip">
+								<a href="detail_page_tacos.html"><img src="img/julian.jpg" alt=""></a>
+							</div>
+							<div class="rating">
+								<i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i> (<small><a href="#0">98 reviews</a></small>)
+							</div>
+							<h3>Tacos de Don Julian</h3>
+							<div class="location">
+								Enfrente del estadio Castro Servín. <br>
+								<span class="opening">6:00am – 6:00pm</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="go_to">
+							<div>
+								<a href="detail_page_tacos.html" class="btn_1">Ver Menu</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- End row-->
+			</div><!-- End strip_list-->
+            
+			<div class="strip_list last wow fadeIn" data-wow-delay="0.6s">
+				<div class="row">
+					<div class="col-md-9">
+						<div class="desc">
+							<div class="thumb_strip">
+								<a href="detail_page_caf.html"><img src="img/caffenio.jpg" alt=""></a>
+							</div>
+							<div class="rating">
+								<i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i> (<small><a href="#0">98 reviews</a></small>)
+							</div>
+							<h3>Tiendita del caffenio</h3>
+							<div class="location">
+								Contra esquina de rectoría atrás del caffenio. <br>
+								<span class="opening">7:00am – 8:00pm</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="go_to">
+							<div>
+								<a href="detail_page_caf.html" class="btn_1">Ver Menu</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- End row-->
+			</div><!-- End strip_list--> 
+		</div><!-- End col-md-9-->
+	</div><!-- End row -->
+</div><!-- End container -->
+<!-- End Content =============================================== -->
+
+<!-- Footer ================================================== -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="about.html">Sobre nosotros</a></li>
+                        <li><a href="faq.html">Faq</a></li>
+                        <li><a href="terminos.html">Terminos y condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    
+                </div>
+                <div class="col-md-5" id="newsletter">
+                    <h3>Newsletter</h3>
+                    <p>
+                       Unete a nuestro newsletter para estar al tanto de las novedades.
+                    </p>
+                    <div id="message-newsletter_2">
+                    </div>
+                    <form method="post" action="assets/newsletter.php" name="newsletter_2" id="newsletter_2">
+                        <div class="form-group">
+                            <input name="email_newsletter_2" id="email_newsletter_2" type="email" value="" placeholder="Tu correo" class="form-control">
+                        </div>
+                        <input type="submit" value="Subscribete" class="btn_1" id="submit-newsletter_2">
+                    </form>
+                </div>
+            </div><!-- End row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="social_footer">
+                        
+                        <p>
+                            © UniFood 2022
+                        </p>
+                    </div>
+                </div>
+            </div><!-- End row -->
+        </div><!-- End container -->
+    </footer>
+    <!-- End Footer =============================================== -->
+    
+<!-- COMMON SCRIPTS -->
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/common_scripts_min.js"></script>
+<script src="js/functions.js"></script>
+<script src="assets/validate.js"></script>
+
+<!-- SPECIFIC SCRIPTS -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script src="js/map.js"></script>
+<script src="js/infobox.js"></script>
+<script src="js/ion.rangeSlider.js"></script>
+<script>
+    $(function () {
+		 'use strict';
+        $("#range").ionRangeSlider({
+            hide_min_max: true,
+            keyboard: true,
+            min: 0,
+            max: 15,
+            from: 0,
+            to:5,
+            type: 'double',
+            step: 1,
+            prefix: "Km ",
+            grid: true
+        });
+    });
+</script>
+</body>
+</html>

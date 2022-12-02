@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="keywords" content="pizza, delivery food, fast food, sushi, take away, chinese, italian food">
+	<meta name="description" content="">
+	<meta name="author" content="Ansonika">
+    <title>UniFood</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+	<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+	<!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/elegant_font/elegant_font.min.css" rel="stylesheet">
+    <link href="css/fontello/css/fontello.min.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/pop_up.css" rel="stylesheet">
+
+	<!-- SPECIFIC CSS -->
+	<link href="css/skins/square/grey.css" rel="stylesheet">
+	<link href="css/admin.css" rel="stylesheet">
+	<link href="js/editor/summernote-bs4.css" rel="stylesheet">
+	<link href="css/dropzone.css" rel="stylesheet">
+
+	<!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div id="preloader">
+		<div class="sk-spinner sk-spinner-wave" id="status">
+			<div class="sk-rect1"></div>
+			<div class="sk-rect2"></div>
+			<div class="sk-rect3"></div>
+			<div class="sk-rect4"></div>
+			<div class="sk-rect5"></div>
+		</div>
+	</div>
+	<!-- End Preload -->
+
+     <!-- Header ================================================== -->
+    <header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-4">
+                <a href="index.html" id="logo">
+                    <img src="img/logo/logo.png" width="190" height="23" alt="" class="d-none d-sm-block">
+                    <img src="img/logo/logo_mobile.png" width="59" height="23" alt="" class="d-block d-sm-none">
+                </a>
+            </div>
+            <nav class="col-md-8 col-sm-8 col-8">
+            <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+            <div class="main-menu">
+                <div id="header_menu">
+                    <img src="img/logo.png" width="190" height="23" alt="">
+                </div>
+                <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
+                 <ul>
+                    <li class="submenu">
+                    <a href="index.html" class="show-submenu">Inicio</a>
+                    </li>
+                    <li class="submenu">
+                    <a href="list_page.html" class="show-submenu">Restaurantes</a>
+                    </li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="faq.html">Faq</a></li>
+                    <li class="submenu">
+                    <a href="javascript:void(0);" class="show-submenu">Pages<i class="icon-down-open-mini"></i></a>
+                    <ul>
+                        <li><a href="admin.html">Admin section</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </div><!-- End main-menu -->
+            </nav>
+        </div><!-- End row -->
+    </div><!-- End container -->
+    </header>
+    <!-- End Header =============================================== -->
+
+	<!-- SubHeader =============================================== -->
+	<section class="parallax-window" id="short" data-parallax="scroll" data-image-src="img/banneradmin.jpg" data-natural-width="1400" data-natural-height="350">
+		<div id="subheader">
+			<div id="sub_content">
+				<h1>Seccion de Admin</h1>
+				<p>Agrega un restaurante a la lista.</p>
+				<p></p>
+			</div><!-- End sub_content -->
+		</div><!-- End subheader -->
+	</section><!-- End section -->
+	<!-- End SubHeader ============================================ -->
+
+	<div id="position">
+		<div class="container">
+			<ul>
+				<li><a href="#0">Inicio</a>
+				</li>
+				</li>
+				<li>Seccion de Admin</li>
+			</ul>
+			<a href="#0" class="search-overlay-menu-btn"><i class="icon-search-6"></i> Buscar</a>
+		</div>
+	</div><!-- Position -->
+
+	<!-- Content ================================================== -->
+	<div class="container margin_60">
+		<div id="tabs" class="tabs">
+			<nav>
+				<ul>
+					<li><a href="#section-1" class="icon-profile"><span>Informacion general</span></a>
+					</li>
+					<li><a href="#section-2" class="icon-menut-items"><span>Menu</span></a>
+					</li>
+					<li><a href="#section-3" class="icon-settings"><span>Configuracion</span></a>
+					</li>
+				</ul>
+			</nav>
+			<div class="content">
+
+				<section id="section-1">
+					<div class="indent_title_in">
+						<i class="icon_house_alt"></i>
+						<h3>Descripcion general del Restaurante</h3>
+						<p>Aqui se escribe toda la informacion general del restaurante.</p>
+					</div>
+
+					<div class="wrapper_indent">
+						<div class="form-group">
+							<label>Nombre del lugar</label>
+							<input class="form-control" name="restaurant_name" id="restaurant_name" type="text">
+						</div>
+						<div class="form-group">
+							<label>Descripcion</label>
+							<textarea class="wysihtml5 form-control" placeholder="Enter text ..." style="height: 200px;"></textarea>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Telefono</label>
+									<input type="text" id="Telephone" name="Telephone" class="form-control">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Email</label>
+									<input type="email" id="Email" name="Email" class="form-control">
+								</div>
+							</div>
+						</div>
+					</div><!-- End wrapper_indent -->
+
+					<hr class="styled_2">
+
+					<div class="indent_title_in">
+						<i class="icon_pin_alt"></i>
+						<h3>Ubicacion</h3>
+						<p>
+							Indica donde se encuentra tu negocio.
+						</p>
+					</div>
+					<div class="wrapper_indent">
+						
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Direccion</label>
+									<input type="text" id="street_1" name="street_1" class="form-control">
+								</div>
+							</div>
+							
+						</div>
+						
+					</div><!-- End wrapper_indent -->
+
+					<hr class="styled_2">
+					<div class="indent_title_in">
+						<i class="icon_images"></i>
+						<h3>Logo y fotos</h3>
+						<p>
+							Permita que las personas conozca como se ve su negocio fisicamente.
+						</p>
+					</div>
+
+					<div class="wrapper_indent add_bottom_45">
+						<div class="form-group">
+							<label>Sube tu logoo</label>
+							<div id="logo_picture" class="dropzone">
+								<input name="file" type="file">
+								<div class="dz-default dz-message"><span>Click or Drop Images Here</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label>Sube fotos del negocio</label>
+							<div id="photos" class="dropzone">
+								<input name="file" type="file" multiple>
+								<div class="dz-default dz-message"><span>Click or Drop Images Here</span>
+								</div>
+							</div>
+						</div>
+					</div><!-- End wrapper_indent -->
+                    
+					<hr class="styled_2">
+					<div class="wrapper_indent">
+						<button class="btn_1">Guardar</button>
+					</div><!-- End wrapper_indent -->
+                    
+				</section><!-- End section 1 -->
+
+				<section id="section-2">
+					<div class="indent_title_in">
+						<i class="icon_document_alt"></i>
+						<h3>Editar menu</h3>
+						<p>Agrega tus alimentos a vender, incluye fotos, nombre y precios.</p>
+					</div>
+                    
+					<div class="wrapper_indent">
+						<div class="form-group">
+							<label>Categoria</label>
+							<input type="text" name="menu_category" class="form-control" placeholder="EX. Bebidas">
+						</div>
+
+						<div class="menu-item-section clearfix">
+							<h4>Articulo #1</h4>
+							<div><a href="#0"><i class="icon_plus_alt"></i></a><a href="#0"><i class="icon_minus_alt"></i></a>
+							</div>
+						</div>
+
+						<div class="strip_menu_items">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="menu-item-pic dropzone">
+										<input name="file" type="file">
+										<div class="dz-default dz-message"><span>Click or Drop<br>Images Here</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-9">
+									<div class="row">
+										<div class="col-md-8">
+											<div class="form-group">
+												<label>Nombre</label>
+												<input type="text"  name="menu_item_title" class="form-control">
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="form-group">
+												<label>Precio</label>
+												<input type="text" name="menu_item_title_price" class="form-control">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label>Pequeña descripcion</label>
+										<input type="text" name="menu_item_description" class="form-control">
+									</div>
+								</div>
+							</div><!-- End row -->
+						</div><!-- End strip_menu_items -->
+
+                        <div class="menu-item-section clearfix">
+							<h4>Articulo #2</h4>
+							<div><a href="#0"><i class="icon_plus_alt"></i></a><a href="#0"><i class="icon_minus_alt"></i></a>
+							</div>
+						</div>
+
+						<div class="strip_menu_items">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="menu-item-pic dropzone">
+										<input name="file" type="file">
+										<div class="dz-default dz-message"><span>Click or Drop<br>Images Here</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-9">
+									<div class="row">
+										<div class="col-md-8">
+											<div class="form-group">
+												<label>Nombre</label>
+												<input type="text"  name="menu_item_title" class="form-control">
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="form-group">
+												<label>Precio</label>
+												<input type="text" name="menu_item_title_price" class="form-control">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label>Pequeña descripcion</label>
+										<input type="text" name="menu_item_description" class="form-control">
+									</div>
+								</div>
+							</div><!-- End row -->
+						</div><!-- End strip_menu_items -->
+
+						
+					</div><!-- End wrapper_indent -->
+
+					<hr class="styled_2">
+                    
+					<div class="wrapper_indent">
+						<div class="form-group">
+							<label>Categoria</label>
+							<input type="text" name="menu_category" class="form-control" placeholder="EX. Snacks">
+						</div>
+                        <div class="menu-item-section clearfix">
+							<h4>Articulo #1</h4>
+							<div><a href="#0"><i class="icon_plus_alt"></i></a><a href="#0"><i class="icon_minus_alt"></i></a>
+							</div>
+						</div>
+
+						<div class="strip_menu_items">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="menu-item-pic dropzone">
+										<input name="file" type="file">
+										<div class="dz-default dz-message"><span>Click or Drop<br>Images Here</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-9">
+									<div class="row">
+										<div class="col-md-8">
+											<div class="form-group">
+												<label>Nombre</label>
+												<input type="text"  name="menu_item_title" class="form-control">
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="form-group">
+												<label>Precio</label>
+												<input type="text" name="menu_item_title_price" class="form-control">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label>Pequeña descripcion</label>
+										<input type="text" name="menu_item_description" class="form-control">
+									</div>
+								</div>
+							</div><!-- End row -->
+						</div><!-- End strip_menu_items -->
+					</div><!-- End wrapper_indent -->
+                    
+					<hr class="styled_2">
+                    
+					<div class="wrapper_indent">
+						<div class="add_more_cat"><a href="#0" class="btn_1">Guardar</a> <a href="#0" class="btn_1">Agregar categoria</a> </div>
+					</div><!-- End wrapper_indent -->
+                    
+				</section><!-- End section 2 -->
+
+				<section id="section-3">
+
+					<div class="row">
+                    
+						<div class="col-md-6 col-sm-6 add_bottom_15">
+							<div class="indent_title_in">
+								<i class="icon_lock_alt"></i>
+								<h3>Cambia tu contraseña</h3>
+							</div>
+							<div class="wrapper_indent">
+								<div class="form-group">
+									<label>Contraseña antigua</label>
+									<input class="form-control" name="old_password" id="old_password" type="password">
+								</div>
+								<div class="form-group">
+									<label>Nueva contraseña</label>
+									<input class="form-control" name="new_password" id="new_password" type="password">
+								</div>
+								<div class="form-group">
+									<label>Confirma nueva contraseña</label>
+									<input class="form-control" name="confirm_new_password" id="confirm_new_password" type="password">
+								</div>
+								<button type="submit" class="btn_1 green">Actualizar contraseña</button>
+							</div><!-- End wrapper_indent -->
+						</div>
+                        
+						<div class="col-md-6 col-sm-6 add_bottom_15">
+							<div class="indent_title_in">
+								<i class="icon_mail_alt"></i>
+								<h3>Cambia tu email</h3>
+							</div>
+							<div class="wrapper_indent">
+								<div class="form-group">
+									<label>Email antigua</label>
+									<input class="form-control" name="old_email" id="old_email" type="email">
+								</div>
+								<div class="form-group">
+									<label>Nuevo email</label>
+									<input class="form-control" name="new_email" id="new_email" type="email">
+								</div>
+								<div class="form-group">
+									<label>Confirmar nuevo email</label>
+									<input class="form-control" name="confirm_new_email" id="confirm_new_email" type="email">
+								</div>
+								<button type="submit" class="btn_1 green">Update Email</button>
+							</div><!-- End wrapper_indent -->
+						</div>
+                        
+					</div><!-- End row -->
+
+					<hr class="styled_2">
+                    
+                    
+				</section><!-- End section 3 -->
+
+			</div><!-- End content -->
+		</div>
+	</div><!-- End container  -->
+	<!-- End Content =============================================== -->
+
+	<!-- Footer ================================================== -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="about.html">Sobre nosotros</a></li>
+                        <li><a href="faq.html">Faq</a></li>
+                        <li><a href="terminos.html">Terminos y condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    
+                </div>
+                <div class="col-md-5" id="newsletter">
+                    <h3>Newsletter</h3>
+                    <p>
+                       Unete a nuestro newsletter para estar al tanto de las novedades.
+                    </p>
+                    <div id="message-newsletter_2">
+                    </div>
+                    <form method="post" action="assets/newsletter.php" name="newsletter_2" id="newsletter_2">
+                        <div class="form-group">
+                            <input name="email_newsletter_2" id="email_newsletter_2" type="email" value="" placeholder="Tu correo" class="form-control">
+                        </div>
+                        <input type="submit" value="Subscribete" class="btn_1" id="submit-newsletter_2">
+                    </form>
+                </div>
+            </div><!-- End row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="social_footer">
+                        
+                        <p>
+                            © UniFood 2022
+                        </p>
+                    </div>
+                </div>
+            </div><!-- End row -->
+        </div><!-- End container -->
+    </footer>
+    <!-- End Footer =============================================== -->
+
+	<!-- COMMON SCRIPTS -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/common_scripts_min.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="assets/validate.js"></script>
+
+	<!-- Specific scripts -->
+	<script src="js/tabs.js"></script>
+	<script>
+		new CBPFWTabs(document.getElementById('tabs'));
+	</script>
+	<!-- WYSIWYG Editor -->
+  	<script src="js/editor/summernote-bs4.min.js"></script>
+  	<script>
+      $('.wysihtml5').summernote({
+    fontSizes: ['10', '14'],
+    toolbar: [
+      // [groupName, [list of button]]
+      ['style', ['bold', 'italic', 'underline', 'clear']],
+      ['font', ['strikethrough']],
+      ['fontsize', ['fontsize']],
+      ['para', ['ul', 'ol', 'paragraph']]
+      ],
+        placeholder: 'Write here your description....',
+        tabsize: 2,
+        height: 200
+      });
+    </script>
+	<script src="js/dropzone.min.js"></script>
+	<script>
+		if ($('.dropzone').length > 0) {
+			Dropzone.autoDiscover = false;
+			$("#photos").dropzone({
+				url: "upload",
+				addRemoveLinks: true
+			});
+
+			$("#logo_picture").dropzone({
+				url: "upload",
+				maxFiles: 1,
+				addRemoveLinks: true
+			});
+
+			$(".menu-item-pic").dropzone({
+				url: "upload",
+				maxFiles: 1,
+				addRemoveLinks: true
+			});
+		}
+	</script>
+
+</body>
+
+</html>
